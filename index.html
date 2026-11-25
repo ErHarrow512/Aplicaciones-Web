@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<!-- Hace que la página se vea bien en el móvil -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aplicaciones Web · Tareas de Juan Luis Díaz Urbina</title>
 <style>
+  /* Colores de la página (modo claro); se cambian aquí una sola vez */
   :root {
     --fondo: #f3f6fb;
     --superficie: #ffffff;
@@ -15,6 +17,7 @@
     --acento-texto: #ffffff;
     color-scheme: light;
   }
+  /* Colores cuando el móvil u ordenador está en modo oscuro */
   @media (prefers-color-scheme: dark) {
     :root {
       --fondo: #0f1724;
@@ -27,6 +30,7 @@
       color-scheme: dark;
     }
   }
+  /* El relleno no agranda las cajas */
   * { box-sizing: border-box; }
   html { scroll-padding-top: 1rem; }
   body {
@@ -36,11 +40,15 @@
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.65;
   }
+  /* Centra el contenido y limita su ancho */
   main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  /* clamp(): el título se adapta al tamaño de pantalla */
   h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.15; margin: 0 0 .5rem; }
   .intro { color: var(--suave); margin: 0 0 2.5rem; }
   h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  /* Listas sin viñetas y con las tarjetas una debajo de otra */
   ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+  /* Aspecto de cada tarjeta de enlace */
   a.enlace {
     display: block;
     padding: 1rem 1.25rem;
@@ -51,6 +59,7 @@
     color: var(--texto);
     text-decoration: none;
   }
+  /* Cambia de color al pasar el ratón o al navegar con el teclado */
   a.enlace:hover, a.enlace:focus-visible {
     background: var(--acento);
     color: var(--acento-texto);
@@ -70,6 +79,7 @@
   <h2>Carpeta general</h2>
   <ul>
     <li>
+      <!-- Plantilla de tarjeta: href = enlace, target="_blank" lo abre en pestaña nueva -->
       <a class="enlace" href="https://drive.google.com/drive/folders/1GqTjf8TrTDDF9ocu6TA59E8jvcWKw-Mx?usp=drive_link" target="_blank" rel="noopener">
         <span class="titulo">Mi Drive</span>
         <span class="detalle">Todas las tareas de Aplicaciones Web</span>
@@ -105,6 +115,17 @@
       <a class="enlace" href="https://canva.link/7ta4n45a6wdqxej" target="_blank" rel="noopener">
         <span class="titulo">Bases de datos y gestores de contenidos</span>
         <span class="detalle">Abrir presentación en Canva</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Examen del miércoles 2 de diciembre</h2>
+  <ul>
+    <li>
+      <!-- Cuando tenga el enlace del examen, cambiaré el # de href por la dirección completa -->
+      <a class="enlace" href="#" target="_blank" rel="noopener">
+        <span class="titulo">Enlace al examen</span>
+        <span class="detalle">Se añadirá el día del examen</span>
       </a>
     </li>
   </ul>
