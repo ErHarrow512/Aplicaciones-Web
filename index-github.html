@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aplicaciones Web · Tareas de Juan Luis Díaz Urbina</title>
+<style>
+  :root {
+    --fondo: #f3f6fb;
+    --superficie: #ffffff;
+    --texto: #16233a;
+    --suave: #51607a;
+    --borde: #cfd9e8;
+    --acento: #1f5fbf;
+    --acento-texto: #ffffff;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #0f1724;
+      --superficie: #17233a;
+      --texto: #e8eefb;
+      --suave: #a3b2cc;
+      --borde: #2b3b58;
+      --acento: #6aa4ff;
+      --acento-texto: #0f1724;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 1rem; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); line-height: 1.15; margin: 0 0 .5rem; }
+  .intro { color: var(--suave); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .75rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+  a.enlace {
+    display: block;
+    padding: 1rem 1.25rem;
+    background: var(--superficie);
+    border: 1px solid var(--borde);
+    border-left: 5px solid var(--acento);
+    border-radius: 6px;
+    color: var(--texto);
+    text-decoration: none;
+  }
+  a.enlace:hover, a.enlace:focus-visible {
+    background: var(--acento);
+    color: var(--acento-texto);
+    outline: none;
+  }
+  a.enlace:focus-visible { outline: 3px solid var(--texto); outline-offset: 2px; }
+  .titulo { font-weight: bold; display: block; }
+  .detalle { font-size: .95rem; opacity: .85; }
+  footer { margin-top: 3rem; color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aplicaciones Web</h1>
+  <p class="intro">Tareas y prácticas del módulo, por Juan Luis Díaz Urbina. Cada enlace abre la carpeta correspondiente en Google Drive.</p>
+
+  <h2>Carpeta general</h2>
+  <ul>
+    <li>
+      <a class="enlace" href="https://drive.google.com/drive/folders/1GqTjf8TrTDDF9ocu6TA59E8jvcWKw-Mx?usp=drive_link" target="_blank" rel="noopener">
+        <span class="titulo">Mi Drive</span>
+        <span class="detalle">Todas las tareas de Aplicaciones Web</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Prácticas</h2>
+  <ul>
+    <li>
+      <a class="enlace" href="https://drive.google.com/drive/folders/1nwhu4TI7Duw3v-xnDzomGNVw_sNzKExF?usp=drive_link" target="_blank" rel="noopener">
+        <span class="titulo">Práctica 1 HTML y CSS</span>
+        <span class="detalle">Abrir carpeta en Google Drive</span>
+      </a>
+    </li>
+    <li>
+      <a class="enlace" href="https://drive.google.com/drive/folders/1aOvj5TYBPn1yGXaYR7Xqm8eCzbd2wGDI?usp=drive_link" target="_blank" rel="noopener">
+        <span class="titulo">Práctica 2 HTML y CSS</span>
+        <span class="detalle">Abrir carpeta en Google Drive</span>
+      </a>
+    </li>
+    <li>
+      <a class="enlace" href="https://drive.google.com/drive/folders/1Jr0O8L6HtVbetmJnVmZBfH_lxQJgoHdA?usp=drive_link" target="_blank" rel="noopener">
+        <span class="titulo">Práctica 1: hosts virtuales</span>
+        <span class="detalle">Abrir carpeta en Google Drive</span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Presentaciones</h2>
+  <ul>
+    <li>
+      <a class="enlace" href="https://canva.link/7ta4n45a6wdqxej" target="_blank" rel="noopener">
+        <span class="titulo">Bases de datos y gestores de contenidos</span>
+        <span class="detalle">Abrir presentación en Canva</span>
+      </a>
+    </li>
+  </ul>
+
+  <footer>Publicado con GitHub Pages.</footer>
+</main>
+</body>
+</html>
